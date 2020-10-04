@@ -30,6 +30,11 @@ export default {
             icon: 'desktop-mac',
             label: 'Dashboard',
           },
+          {
+            to: '/login',
+            icon: 'desktop-mac',
+            label: 'Login',
+          },
         ],
         'Examples',
         [

@@ -68,7 +68,11 @@ export default {
    ** Plugins to load before mounting the App
    ** https://nuxtjs.org/guide/plugins
    */
-  plugins: [{ src: '~/plugins/after-each.js', mode: 'client' }],
+  plugins: [
+    { src: '~/plugins/after-each.js', mode: 'client' },
+    { src: '~/plugins/login-particles.js', mode: 'client' },
+    { src: '~/plugins/login-main.js', mode: 'client' },
+  ],
   /*
    ** Auto import components
    ** See https://nuxtjs.org/api/configuration-components
@@ -79,14 +83,14 @@ export default {
    */
   buildModules: [
     // Doc: https://github.com/nuxt-community/eslint-module
-    '@nuxtjs/eslint-module',
+    // '@nuxtjs/eslint-module',
   ],
   /*
    ** Nuxt.js modules
    */
   modules: [
     // Doc: https://buefy.github.io/#/documentation
-    ['nuxt-buefy', { materialDesignIcons: false }],
+    ['nuxt-buefy', { materialDesignIcons: false, defaultIconPack: 'fas' }],
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
     '@nuxtjs/pwa',

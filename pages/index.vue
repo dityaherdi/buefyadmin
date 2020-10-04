@@ -164,7 +164,7 @@ export default {
   },
   head() {
     return {
-      title: 'Dashboard — Admin Null Nuxt.js Bulma',
+      title: 'Dashboard — Sistem Buku Induk',
     }
   },
 }
